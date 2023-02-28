@@ -22,11 +22,6 @@
 
 .tyeif {
   font-family: "tyeif";
-  font-size: 3em;
-}
-
-.tyeif-sm {
-  font-size: 1em;
 }
 
 .hero {
@@ -35,7 +30,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #999;
+  background-color: #fff;
 }
 
 .navbar {
