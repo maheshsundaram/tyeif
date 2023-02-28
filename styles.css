@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "tyeif";
+  src: url("tyeif.woff");
+}
+
+.tyeif {
+  font-family: "tyeif";
+  font-size: 3em;
+}
+
+.tyeif-sm {
+  font-size: 1em;
+}
+
+.hero {
+  background-image: url("bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+.navbar {
+  background: linear-gradient(to right, #d5e4c7, #759f4b);
+  font-size: 2em;
+}
+
+.navbar-item {
+  color: #fff;
+}
+
+.light-green-bg {
+  background-color: #d5e4c7;
+}
+
+.footer {
+  background-color: #c8dbae;
+}
+
+.intro {
+  margin-bottom: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.intro a {
+  text-decoration: underline;
+}
+
+.textarea:active,
+.textarea:focus {
+  border-color: rgb(0 209 178 / 25%);
+  box-shadow: 0 0 0 0.125em rgb(0 209 178 / 25%);
+}
+
+.light-gray-bg {
+  background-color: hsl(0, 0%, 96%);
+}
