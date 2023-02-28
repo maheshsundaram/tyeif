@@ -11,7 +11,7 @@
 
     <link
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕉️</text></svg>"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>"
     />
 
     <title>Tyeif Prayer Maker</title>
@@ -19,77 +19,69 @@
     <script type="text/javascript" src="./app.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-start">
-            <span class="navbar-item">Tyeif Prayer Maker</span>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons"></div>
-            </div>
-          </div>
+    <div id="print" class="print tyeif"></div>
+    <div class="no-print">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <span class="navbar-item">Tyeif Prayer Maker</span>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <section class="hero is-link is-fullheight-with-navbar">
-      <div class="hero-body">
-        <div class="container">
-          <div class="card intro">
-            <div class="card-content light-gray-bg">
-              <p>
-                "To solve the problem of illegibility, the devas themselves gave
-                a new script, which came through from the inner sky in Paris in
-                the early ’70s. The devas called this script Tyēīf. It is
-                designed to look like bamboo leaves..."
-              </p>
-              <br />
-              <p>
-                <a
-                  href="https://www.himalayanacademy.com/media/books/living-with-siva/web/part3_46.html"
-                  >From Living with Śiva by Sivaya Subramuniyaswami, Lesson
-                  316</a
-                >
-              </p>
+      <section class="hero is-link is-fullheight-with-navbar">
+        <div class="hero-body">
+          <div class="container">
+            <div class="card intro">
+              <div class="card-content light-gray-bg">
+                <p>
+                  "To solve the problem of illegibility, the devas themselves
+                  gave a new script, which came through from the inner sky in
+                  Paris in the early ’70s. The devas called this script Tyēīf.
+                  It is designed to look like bamboo leaves..."
+                </p>
+                <br />
+                <p>
+                  <a
+                    href="https://www.himalayanacademy.com/media/books/living-with-siva/web/part3_46.html"
+                    >From Living with Śiva by Sivaya Subramuniyaswami, Lesson
+                    316</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card light-gray-bg">
-            <div class="card-content">
-              <div class="columns">
-                <div class="column">
-                  <div class="card">
-                    <div class="card-header">
-                      <p class="card-header-title">English</p>
-                    </div>
-                    <div class="card-content">
-                      <textarea
-                        class="textarea"
-                        placeholder="Enter your prayer text in English here..."
-                      ></textarea>
+            <div class="card light-gray-bg">
+              <div class="card-content">
+                <div class="columns">
+                  <div class="column">
+                    <div class="card">
+                      <div class="card-header">
+                        <p class="card-header-title">English</p>
+                      </div>
+                      <div class="card-content">
+                        <textarea
+                          id="english"
+                          class="textarea"
+                          placeholder="Enter your prayer text in English here..."
+                        ></textarea>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="column">
-                  <div class="card">
-                    <div class="card-header">
-                      <p class="card-header-title">Tyeif</p>
-                      <button
-                        class="card-header-icon"
-                        aria-label="print"
-                        onClick="window.print()"
-                      >
-                        <span class="icon">
-                          <img src="printing.png" />
-                        </span>
-                      </button>
-                    </div>
-                    <div class="card-content">
-                      <textarea class="textarea tyeif">
-aum namah sivaya</textarea
-                      >
+                  <div class="column">
+                    <div class="card">
+                      <div class="card-header">
+                        <p class="card-header-title">Tyeif</p>
+                        <button
+                          class="card-header-icon"
+                          aria-label="print"
+                          onClick="window.print()"
+                        >
+                          <span class="icon">
+                            <img src="printing.png" />
+                          </span>
+                        </button>
+                      </div>
+                      <div class="card-content">
+                        <textarea id="tyeif" class="textarea tyeif"></textarea>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -97,34 +89,31 @@ aum namah sivaya</textarea
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section is-medium light-green-bg">
-      <div class="card">
-        <div class="card-content">
-          <h1 class="title">Medium section</h1>
-          <h2 class="subtitle">
-            A simple container to divide your page into
-            <strong>sections</strong>, like the one you're currently reading.
-          </h2>
+      <footer class="footer light-green-bg">
+        <div class="content has-text-centered">
+          <p>
+            The Tyeif Prayer Maker app was made by
+            <a href="mailto:mahesh@omkaradev">Mahesh Sundaram</a>. You can find
+            the source code on
+            <a href="https://github.com/maheshsundaram/tyeif">Github</a>.
+          </p>
+          <p>
+            Bamboo background image by
+            <a
+              href="https://www.freepik.com/free-vector/elegant-greenery-bamboo-watercolor-floral-seamless-pattern_35366761.htm"
+              >mariadetarosarinda</a
+            >
+          </p>
+          <p>
+            Printer Icon from
+            <a href="https://www.flaticon.com/free-icons/print"
+              >Freepik - Flaticon</a
+            >
+          </p>
         </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by
-          <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
-          licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-          website content is licensed
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-            >CC BY NC SA 4.0</a
-          >.
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

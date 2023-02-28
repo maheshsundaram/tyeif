@@ -1,3 +1,20 @@
+@media print {
+  .print {
+    display: block;
+    font-family: "tyeif";
+    font-size: 3em;
+  }
+  .no-print {
+    display: none;
+  }
+}
+
+@media screen {
+  .print {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "tyeif";
   src: url("tyeif.woff");
@@ -32,10 +49,6 @@
 
 .light-green-bg {
   background-color: #d5e4c7;
-}
-
-.footer {
-  background-color: #c8dbae;
 }
 
 .intro {
