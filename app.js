@@ -8,3 +8,5 @@ addEventListener("DOMContentLoaded", () => {
     Print.innerText = text;
   });
 });
+
+function save() {}
