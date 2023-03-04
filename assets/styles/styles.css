@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "tyeif";
-  src: url("tyeif.woff");
+  src: url("../fonts/tyeif.woff");
 }
 
 .tyeif {
@@ -25,7 +25,7 @@
 }
 
 .hero {
-  background-image: url("bg.png");
+  background-image: url("../images/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
