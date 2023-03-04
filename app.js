@@ -4,7 +4,6 @@ addEventListener("DOMContentLoaded", () => {
   const Print = document.getElementById("print");
   English.addEventListener("keyup", (e) => {
     const text = e.target.value.toLowerCase().replace(/[^a-z\s\.\,\:]/gi, "");
-    console.log("text", text);
     Tyeif.textContent = text;
     Print.innerText = text;
   });
