@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "postinstall": "mkdir -p modules && cp node_modules/html-to-image/dist/html-to-image.js modules/",
     "build": "tsc",
     "watch": "tsc --watch"
   },
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/maheshsundaram/tyeif#readme",
   "devDependencies": {
+    "html-to-image": "1.11.11",
     "typescript": "^5.0.0-beta"
   }
 }
