@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "postinstall": "mkdir -p modules && cp node_modules/html-to-image/dist/html-to-image.js modules/",
+    "postinstall": "mkdir -p modules && cp -r node_modules/html-to-image/es modules/html-to-image && cp node_modules/es-module-shims/dist/es-module-shims.js modules/",
     "build": "tsc",
     "watch": "tsc --watch"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/maheshsundaram/tyeif#readme",
   "devDependencies": {
+    "es-module-shims": "1.7.0",
     "html-to-image": "1.11.11",
     "typescript": "5.0.0-beta"
   }

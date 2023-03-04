@@ -16,7 +16,17 @@
 
     <title>Tyeif Prayer Maker</title>
 
-    <script type="text/javascript" src="./modules/app.js"></script>
+    <script async src="./modules/es-module-shims.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "html-to-image": "./modules/html-to-image/index.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="./modules/app.js"></script>
   </head>
   <body>
     <div id="print" class="print tyeif"></div>
@@ -54,13 +64,13 @@
                   <div class="column">
                     <div class="card">
                       <div class="card-header">
-                        <p class="card-header-title">English</p>
+                        <p class="card-header-title">Prayer</p>
                       </div>
                       <div class="card-content">
                         <textarea
-                          id="english"
+                          id="prayer"
                           class="textarea"
-                          placeholder="Enter your prayer text in English here..."
+                          placeholder="Enter your prayer text here..."
                         ></textarea>
                       </div>
                     </div>
@@ -70,18 +80,18 @@
                       <div class="card-header">
                         <p class="card-header-title">Tyeif</p>
                         <button
+                          id="printButton"
                           class="card-header-icon"
                           aria-label="print"
-                          onClick="window.print()"
                         >
                           <span class="icon">
                             <img src="assets/images/printing.png" />
                           </span>
                         </button>
                         <button
+                          id="saveButton"
                           class="card-header-icon"
                           aria-label="print"
-                          onClick="save()"
                         >
                           <span class="icon">
                             <img src="assets/images/save.png" />
