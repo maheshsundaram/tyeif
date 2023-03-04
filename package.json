@@ -21,6 +21,6 @@
   "homepage": "https://github.com/maheshsundaram/tyeif#readme",
   "devDependencies": {
     "html-to-image": "1.11.11",
-    "typescript": "^5.0.0-beta"
+    "typescript": "5.0.0-beta"
   }
 }
