@@ -26,82 +26,74 @@
       }
     </script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="./modules/app.js"></script>
   </head>
   <body>
     <div id="print" class="print tyeif"></div>
-    <div class="no-print">
+    <div id="no-print" class="no-print">
       <nav class="navbar">
         <div class="navbar-brand">
           <span class="navbar-item">Tyeif Prayer Maker</span>
         </div>
       </nav>
 
-      <section class="hero is-fullheight-with-navbar">
+      <section class="hero is-fullheight-with-navbar main">
         <div class="hero-body">
           <div class="container">
-            <div class="card intro">
-              <div class="card-content light-gray-bg">
-                <p>
-                  "To solve the problem of illegibility, the devas themselves
-                  gave a new script, which came through from the inner sky in
-                  Paris in the early ’70s. The devas called this script Tyēīf.
-                  It is designed to look like bamboo leaves..."
-                </p>
-                <br />
-                <p>
-                  <a
-                    href="https://www.himalayanacademy.com/media/books/living-with-siva/web/part3_46.html"
-                    >From Living with Śiva by Sivaya Subramuniyaswami, Lesson
-                    316</a
-                  >
-                </p>
-              </div>
-            </div>
             <div class="card light-gray-bg">
               <div class="card-content">
-                <div class="columns">
-                  <div class="column">
-                    <div class="card">
-                      <div class="card-header">
-                        <p class="card-header-title">Prayer</p>
-                      </div>
-                      <div class="card-content">
-                        <textarea
-                          id="prayer"
-                          class="textarea"
-                          placeholder="Enter your prayer text here..."
-                        ></textarea>
-                      </div>
-                    </div>
+                <div class="card large-font">
+                  <div class="card-header">
+                    <p class="card-header-title">Prayer</p>
                   </div>
-                  <div class="column">
-                    <div class="card">
-                      <div class="card-header">
-                        <p class="card-header-title">Tyeif</p>
-                        <button
-                          id="printButton"
-                          class="card-header-icon"
-                          aria-label="print"
-                        >
-                          <span class="icon">
-                            <img src="assets/images/printing.png" />
-                          </span>
-                        </button>
-                        <button
-                          id="saveButton"
-                          class="card-header-icon"
-                          aria-label="print"
-                        >
-                          <span class="icon">
-                            <img src="assets/images/save.png" />
-                          </span>
-                        </button>
-                      </div>
-                      <div class="card-content">
-                        <textarea id="tyeif" class="textarea tyeif"></textarea>
-                      </div>
-                    </div>
+                  <div class="card-content">
+                    <textarea
+                      id="prayer"
+                      class="textarea med-font"
+                      placeholder="Enter your prayer text here..."
+                    >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea
+                    >
+                  </div>
+                </div>
+                <br />
+                <div class="card large-font">
+                  <div class="card-header">
+                    <p class="card-header-title">Tyeif</p>
+                    <button
+                      id="printButton"
+                      class="card-header-icon"
+                      aria-label="print"
+                    >
+                      <span class="icon">
+                        <img src="assets/images/printing.png" />
+                      </span>
+                    </button>
+                  </div>
+                  <div id="tyeif" class="card-content tyeif large-font">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <p>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                      Excepteur sint occaecat cupidatat non proident, sunt in
+                      culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -110,30 +102,60 @@
         </div>
       </section>
 
-      <footer class="footer light-green-bg">
-        <div class="content has-text-centered">
-          <p>
-            The Tyeif Prayer Maker app was made by
-            <a href="mailto:mahesh@omkaradev">Mahesh Sundaram</a>. You can find
-            the source code on
-            <a href="https://github.com/maheshsundaram/tyeif">Github</a>.
+      <section class="hero is-medium light-green-bg">
+        <div class="hero-body">
+          <p class="title">
+            "To solve the problem of illegibility, the devas themselves gave a
+            new script, which came through from the inner sky in Paris in the
+            early ’70s. The devas called this script Tyēīf. It is designed to
+            look like bamboo leaves..."
           </p>
-          <p>
-            Bamboo background image by
+          <br />
+          <p class="subtitle">
             <a
-              href="https://www.freepik.com/free-vector/elegant-greenery-bamboo-watercolor-floral-seamless-pattern_35366761.htm"
-              >mariadetarosarinda</a
+              href="https://www.himalayanacademy.com/media/books/living-with-siva/web/part3_46.html"
+              >From Living with Śiva by Sivaya Subramuniyaswami, Lesson 316</a
             >
           </p>
-          <p>
-            <a href="https://www.flaticon.com/free-icons/print"
-              >Printer icon created by Freepik - Flaticon</a
-            >
-            and
-            <a href="https://www.flaticon.com/free-icons/save"
-              >Save icon created by Freepik - Flaticon</a
-            >
-          </p>
+        </div>
+      </section>
+
+      <footer class="footer dark-green-bg">
+        <div class="columns">
+          <div class="column"></div>
+          <div class="column">
+            <p class="title">About</p>
+            <p>
+              The Tyeif Prayer Maker app was made by
+              <a href="mailto:mahesh@omkaradev">Mahesh Sundaram</a>.
+            </p>
+            <p>
+              You can find the source code on
+              <a href="https://github.com/maheshsundaram/tyeif">Github</a>.
+            </p>
+          </div>
+          <div class="column">
+            <p class="title">Attributions</p>
+            <p>
+              The Tyeif computer font was created by
+              <a href="https://www.himalayanacademy.com/readlearn/fonts/"
+                >Himalayan Academy</a
+              >
+            </p>
+            <p>
+              Bamboo background image by
+              <a
+                href="https://www.freepik.com/free-vector/elegant-greenery-bamboo-watercolor-floral-seamless-pattern_35366761.htm"
+                >mariadetarosarinda</a
+              >
+            </p>
+            <p>
+              <a href="https://www.flaticon.com/free-icons/print"
+                >Printer icon created by Freepik - Flaticon</a
+              >
+            </p>
+          </div>
+          <div class="column"></div>
         </div>
       </footer>
     </div>

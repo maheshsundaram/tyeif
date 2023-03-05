@@ -1,32 +1,28 @@
-import { toJpeg } from "html-to-image";
-
 addEventListener("DOMContentLoaded", () => {
   const Prayer = document.getElementById("prayer");
   const Tyeif = document.getElementById("tyeif");
   const Print = document.getElementById("print");
   const printButton = document.getElementById("printButton");
-  const saveButton = document.getElementById("saveButton");
 
-  if (Prayer)
+  if (Prayer) {
     Prayer.addEventListener("keyup", (e: KeyboardEvent) => {
-      // Remove disallowed characters in Tyeif font
+      // Remove characters disallowed in Tyeif font
       const text = (e.target as HTMLTextAreaElement).value
         .toLowerCase()
-        .replace(/[^a-z\s\.\,\:]/gi, "");
+        .replace(/[^a-z\s\.\,\:]/gi, "")
+        .split("\n")
+        // Preserve line breaks
+        .map((line) => (line.length === 0 ? "<br />" : `<p>${line}</p>`))
+        .join("");
 
       // Copy Prayer text to Tyeif input and hidden Print element
-      if (Tyeif) Tyeif.textContent = text;
-      if (Print) Print.innerText = text;
+      if (Tyeif) Tyeif.innerHTML = text;
+      if (Print) Print.innerHTML = text;
     });
+  }
 
   if (printButton)
     printButton.addEventListener("click", () => {
       window.print();
-    });
-
-  if (saveButton && Tyeif)
-    saveButton.addEventListener("click", async () => {
-      const dataURL = await toJpeg(Tyeif, { quality: 100 });
-      console.log("dataURL", dataURL);
     });
 });
