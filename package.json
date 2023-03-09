@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "postinstall": "mkdir -p modules && cp node_modules/es-module-shims/dist/es-module-shims.js modules/",
+    "postinstall": "mkdir -p public/modules && cp node_modules/es-module-shims/dist/es-module-shims.js public/modules/",
     "build": "tsc",
     "watch": "tsc --watch"
   },

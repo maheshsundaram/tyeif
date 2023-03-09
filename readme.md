@@ -11,20 +11,21 @@ This app makes writing in the [Tyeif script](https://www.himalayanacademy.com/re
 A straightforward HTML view. Interactivity with vanilla JS (transpiled from the Typescript). The styling uses [Bulma](https://bulma.io/).
 
 ```
-├── index.html    View
-├── assets/       View assets
-│   ├── fonts/
-│   ├── images/
-│   └── styles/
-├── src           App source
-│   └── app.ts
-├── modules/      App build, imported in index.html view
+├── public/
+│   ├── index.html    View
+│   ├── assets/       View assets
+│   │   ├── fonts/
+│   │   ├── images/
+│   │   └── styles/
+│   └── modules/      App build, imported in index.html view
+└── src/              App source
+    └── app.ts
 ```
 
 # Development
 
 `npm install` installs Typescript and [ES Module Shims](https://github.com/guybedford/es-module-shims) and copies the shims to the `modules/` (build) directory.
 
-Run the TS build (with `npx tsc` or e.g. `npx tsc --watch`) to output the app to `modules/`
+Run the TS build (with `npm run build` or `npm run watch`) to output the app to `modules/`
 
 You will need a simple server to run locally. The [Deno std/http file server](https://deno.land/manual/examples/file_server#using-the-stdhttp-file-server) makes this very easy, i.e. after installing it just run `file_server .` in the directory then open the URL in the browser.
