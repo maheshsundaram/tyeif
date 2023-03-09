@@ -27,6 +27,7 @@ a {
 }
 
 .tyeif {
+  font-size: 2em;
   font-family: "tyeif";
   line-height: 1em;
 }
@@ -80,5 +81,18 @@ a {
   }
   .med-font {
     font-size: 100%;
+  }
+  .main-hero {
+    padding-top: 0em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+  .outer-card {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+  .inner-card {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
   }
 }
