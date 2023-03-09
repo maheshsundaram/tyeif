@@ -1,8 +1,15 @@
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
 @media print {
   .print {
     display: block;
     font-family: "tyeif";
-    font-size: 3em;
+    margin-top: 0px;
+    font-size: 3.5em;
+    line-height: 1em;
   }
   .no-print {
     display: none;
@@ -17,15 +24,17 @@
 
 @font-face {
   font-family: "tyeif";
-  src: url("tyeif.woff");
+  src: url("../fonts/tyeif.woff");
 }
 
 .tyeif {
   font-family: "tyeif";
+  line-height: 1em;
+  /*font-size: 4em;*/
 }
 
-.hero {
-  background-image: url("bg.png");
+.main {
+  background-image: url("../images/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,8 +47,24 @@
   font-size: 2em;
 }
 
+.large-font {
+  font-size: 2em;
+}
+
+.med-font {
+  font-size: 1em;
+}
+
 .navbar-item {
   color: #fff;
+}
+
+.dark-green-bg {
+  background-color: #bed0bc;
+}
+
+.other-green-bg {
+  background-color: #9fbd8d;
 }
 
 .light-green-bg {
