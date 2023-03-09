@@ -75,6 +75,10 @@ a {
   background-color: hsl(0, 0%, 96%);
 }
 
+.last-updated {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .large-font {
     font-size: 100%;
