@@ -9,7 +9,7 @@ addEventListener("DOMContentLoaded", () => {
       // Remove characters disallowed in Tyeif font
       const text = (e.target as HTMLTextAreaElement).value
         .toLowerCase()
-        .replace(/[^a-z\s\.\,\:]/gi, "")
+        .replace(/[^a-z\s\.\,\:0-9]/gi, "")
         .split("\n")
         // Preserve line breaks
         .map((line) => (line.length === 0 ? "<br />" : `<p>${line}</p>`))
