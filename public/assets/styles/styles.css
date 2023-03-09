@@ -7,7 +7,6 @@ a {
   .print {
     display: block;
     font-family: "tyeif";
-    margin-top: 0px;
     font-size: 3.5em;
     line-height: 1em;
   }
@@ -30,7 +29,6 @@ a {
 .tyeif {
   font-family: "tyeif";
   line-height: 1em;
-  /*font-size: 4em;*/
 }
 
 .main {
@@ -44,7 +42,15 @@ a {
 
 .navbar {
   background: linear-gradient(to right, #d5e4c7, #759f4b);
-  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .large-font {
+    font-size: reset;
+  }
+  .med-font {
+    font-size: reset;
+  }
 }
 
 .large-font {
@@ -63,22 +69,8 @@ a {
   background-color: #bed0bc;
 }
 
-.other-green-bg {
-  background-color: #9fbd8d;
-}
-
 .light-green-bg {
   background-color: #d5e4c7;
-}
-
-.intro {
-  margin-bottom: 1em;
-  font-weight: 500;
-  font-size: 1.2em;
-}
-
-.intro a {
-  text-decoration: underline;
 }
 
 .textarea:active,
