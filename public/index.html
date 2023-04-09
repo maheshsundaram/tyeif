@@ -59,7 +59,7 @@
                   <div class="card-header">
                     <p class="card-header-title">Tyeif</p>
                     <button
-                      id="printButton"
+                      id="openPrintModal"
                       class="card-header-icon"
                       aria-label="print"
                     >
@@ -93,6 +93,44 @@
           </p>
         </div>
       </section>
+
+      <div id="printModal" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+          <div class="box print-modal-content">
+            <div><span class="title is-4">Print Font Size</span></div>
+            <div>
+              <div class="field font-size-control is-large is-horizontal">
+                <p class="control has-icons-right">
+                  <input
+                    id="fontSizeInput"
+                    class="input is-primary is-large"
+                    type="text"
+                    value="18"
+                  />
+                  <span class="icon is-large is-right">
+                    <i class="font-unit">pt</i>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <button
+                id="printButton"
+                class="card-header-icon"
+                aria-label="print"
+              >
+                <span class="icon">
+                  <img src="assets/images/printing.png" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
 
       <footer class="footer dark-green-bg">
         <div class="columns">
