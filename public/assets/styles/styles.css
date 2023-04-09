@@ -7,7 +7,7 @@ a {
   .print {
     display: block;
     font-family: "tyeif";
-    font-size: 4em;
+    font-size: 18pt;
     line-height: 1em;
   }
   .no-print {
@@ -99,4 +99,18 @@ a {
     padding-left: 0.2em;
     padding-right: 0.2em;
   }
+}
+
+.font-size-control {
+  width: 8em;
+}
+
+.print-modal-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.font-unit {
+  color: #000;
 }
