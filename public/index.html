@@ -27,6 +27,12 @@
 
     <script async src="./modules/es-module-shims.js"></script>
     <script type="module" src="./modules/app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+      integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <div id="print" class="print"></div>
@@ -58,6 +64,15 @@
                 <div class="card large-font">
                   <div class="card-header">
                     <p class="card-header-title">Tyeif</p>
+                    <button
+                      id="openSaveModal"
+                      class="card-header-icon"
+                      aria-label="save"
+                    >
+                      <span class="icon">
+                        <img src="assets/images/download.png" />
+                      </span>
+                    </button>
                     <button
                       id="openPrintModal"
                       class="card-header-icon"
@@ -93,6 +108,44 @@
           </p>
         </div>
       </section>
+
+      <div id="saveModal" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+          <div class="box print-modal-content">
+            <div><span class="title is-4">Display Font Size</span></div>
+            <div>
+              <div class="field font-size-control is-large is-horizontal">
+                <p class="control has-icons-right">
+                  <input
+                    id="fontSizeInput"
+                    class="input is-primary is-large"
+                    type="text"
+                    value="18"
+                  />
+                  <span class="icon is-large is-right">
+                    <i class="font-unit">pt</i>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <button
+                id="saveButton"
+                class="card-header-icon"
+                aria-label="save"
+              >
+                <span class="icon">
+                  <img src="assets/images/download.png" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
 
       <div id="printModal" class="modal">
         <div class="modal-background"></div>
@@ -167,6 +220,12 @@
             <p>
               <a href="https://www.flaticon.com/free-icons/print"
                 >Printer icon created by Freepik - Flaticon</a
+              >.
+            </p>
+            <br />
+            <p>
+              <a href="https://www.flaticon.com/free-icons/pdf"
+                >Pdf icon created by Freepik - Flaticon</a
               >.
             </p>
           </div>

@@ -18,6 +18,7 @@ a {
 @media screen {
   .print {
     display: none;
+    font-family: "tyeif";
   }
 }
 
@@ -113,4 +114,8 @@ a {
 
 .font-unit {
   color: #000;
+}
+
+.prayer-block {
+  break-inside: avoid;
 }
