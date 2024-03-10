@@ -1,3 +1,5 @@
+import { createToast } from "./toast.js";
+
 addEventListener("DOMContentLoaded", () => {
   const Prayer = document.getElementById("prayer");
   const Tyeif = document.getElementById("tyeif");
@@ -6,6 +8,8 @@ addEventListener("DOMContentLoaded", () => {
   const openPrintModal = document.getElementById("openPrintModal");
   const printButton = document.getElementById("printButton");
   const printModal = document.getElementById("printModal");
+  const copyToClipboard = document.getElementById("copyToClipboard");
+  const copyToast = document.getElementById("copyToast");
 
   // prettier-ignore
   const fontSizeInput = document.getElementById("fontSizeInput") as HTMLInputElement;
@@ -32,6 +36,15 @@ addEventListener("DOMContentLoaded", () => {
   // Open Modal
   openPrintModal?.addEventListener("click", () => {
     printModal?.classList.add("is-active");
+  });
+
+  copyToClipboard?.addEventListener("click", async () => {
+    if (Tyeif) {
+      const blob = new Blob([Tyeif?.innerHTML], { type: "text/html" });
+      const data = [new ClipboardItem({ ["text/html"]: blob })];
+      await navigator.clipboard.write(data);
+    }
+    createToast();
   });
 
   fontSizeInput?.addEventListener("keyup", (e) => {

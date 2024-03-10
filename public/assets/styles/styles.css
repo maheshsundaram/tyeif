@@ -1,3 +1,15 @@
+/*
+:root {
+  --nyanza: #d8f3dc;
+  --celadon-1: #b7e4c7;
+  --celadon-2: #95d5b2;
+  --mint-1: #74c69d;
+  --mint-2: #52b788;
+  --sea-green: #40916c;
+  --dartmouth-green: #2d6a4f;
+  --brunswick-green: #1b4332;
+}
+
 a {
   color: #000;
   text-decoration: underline;
@@ -114,3 +126,15 @@ a {
 .font-unit {
   color: #000;
 }
+
+.notification {
+  padding: 40px 80px;
+}
+
+.notification.is-success {
+  background-color: #cbdfbd;
+  color: #000;
+  font-weight: 500;
+  font-size: 2em;
+}
+*/
